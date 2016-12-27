@@ -11,3 +11,5 @@ class ProdConfig(Config):
 class DevConfig(Config):
     '''开发配置类'''
     DEBUG = True
+    #MySQL 连接
+    SQLALCHEMY_DATABASE_URL = 'mysql+pymysql://blog:blog@127.0.0.1:3306/blog'
