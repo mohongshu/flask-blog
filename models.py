@@ -12,7 +12,7 @@ class User(db.Model):
     '''users'''
 
     # 设置表名
-    __tablename__ == 'users'
+    __tablename__ = 'users'
     id = db.Column(db.String(45), primary_key=True)
     username = db.Column(db.String(255))
     password = db.Column(db.String(255))
