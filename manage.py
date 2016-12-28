@@ -2,6 +2,7 @@
 #-*- coding: utf-8 -*-
 from flask.ext.script import Manager, Server
 import main
+import models
 
 #初始化manager对象 via app object
 manager = Manager(main.app)
